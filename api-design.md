@@ -1,7 +1,7 @@
-#API Design
+# API Design
 This document will define the architecture of two endpoints to set and read city's weather forecasts.
 
-##Endpoint/s to set the forecast for a specific city
+## Endpoint/s to set the forecast for a specific city
 
 In this API we will send trough `PUT` method an array of day objects to the defined URL. 
 The Day object is formed of two parameters: 
@@ -51,7 +51,7 @@ PUT /api/v3/cities/{id}/forecast
 }
 ```
 
-##Endpoint/s to read the forecast for a specific city
+## Endpoint/s to read the forecast for a specific city
 In this API we will request trough `GET` method a day object to be returned from the defined URL.
 The city that we are requesting the data from will be defined by the `id` parameter, and the required date will be defined by the `date` parameter inside the URL.
 
@@ -84,5 +84,3 @@ GET /api/v3/cities/{id}/forecast/{date}
   "day": {}
 }
 ```
-
-###Test
