@@ -3,5 +3,8 @@
     "psr-4": {
       "Cities\\": "lib/"
     }
+  },
+  "require": {
+    "curl/curl": "^2.3"
   }
 }
